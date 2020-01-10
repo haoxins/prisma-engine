@@ -8,6 +8,7 @@ use sql_migration_connector::{AlterIndex, CreateIndex, DropIndex, SqlMigrationSt
 use sql_schema_describer::*;
 
 mod mariadb;
+mod mysql;
 
 #[test_each_connector]
 async fn adding_a_scalar_field_must_work(api: &TestApi) {
